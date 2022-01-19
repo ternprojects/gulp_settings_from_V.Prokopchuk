@@ -1,0 +1,85 @@
+// body {
+// 	margin: 0;
+// 	font-size: 16px;
+// 	overflow: hidden;
+// 	/*background-color: blue;*/
+// 	color: #fff;
+// 	display: flex;
+// }
+
+// .menu {
+// 	padding: 0;
+// 	&__list {
+// 		margin: 0;
+// 	}
+// }
+
+// .test {
+// 	text-align: center;
+// 	&__box {
+// 		margin: 0;
+// 	}
+// }
+
+//Переменные
+$top-color: #f62d12;
+$top-font: 'lato', 'sans-serif';
+
+.test {
+	text-align: center;
+}
+
+.menu {
+	float: right;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.description {
+	color: $top-color;
+	&:hover {
+		color: #000;
+		font-family: $top-font;
+	}
+}
+
+.tools {
+	&-description {
+		text-align: left;
+	}
+	&-item {
+		float: left;
+	}
+}
+
+%name-item {
+	font-size: 22px;
+	padding: 10px;
+	background-color: rgba(#12dc13, .9)
+}
+
+.item-1 {
+	color: #ccc;
+	@extend %name-item;
+}
+
+.item-2 {
+	color: #fff;
+	@extend %name-item;
+}
+
+.item-3 {
+	color: #000;
+	@extend %name-item;
+}
+
+//Sass не исп. точки с зап. + фиг. скобки, более строгий
